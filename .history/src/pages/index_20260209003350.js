@@ -28,12 +28,6 @@ import PopupConfirmDelete from "../components/PopupDeleteCard.js";
 
 // Api //
 
-/**
- * Minimal API client:
- * - Wraps fetch calls
- * - Centralizes headers + baseUrl
- * - Keeps page logic focused on UI events/state
- */
 export const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
   headers: {

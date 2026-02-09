@@ -19,21 +19,8 @@ import "./index.css";
 import Api from "../components/Api.js";
 import PopupConfirmDelete from "../components/PopupDeleteCard.js";
 
-/**
- * Entry point for the app:
- * - Wires UI components together (cards, modals, form handlers)
- * - Coordinates API calls through the Api class
- * - Keeps DOM manipulation organized while using modular classes/files
- */
-
 // Api //
 
-/**
- * Minimal API client:
- * - Wraps fetch calls
- * - Centralizes headers + baseUrl
- * - Keeps page logic focused on UI events/state
- */
 export const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
   headers: {
